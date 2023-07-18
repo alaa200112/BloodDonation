@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_baseline_person_outline_24"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_archievement"
+            android:icon="@drawable/img_3"
+            android:title="Archievements" />
+        <item
+            android:id="@+id/nav_donar"
+            android:icon="@drawable/ic_baseline_bloodtype_24"
+            android:title="find Blood Donor" />
+        <item
+            android:id="@+id/nearby_hospital"
+            android:icon="@drawable/img_2"
+            android:title="Find nearest Hospitals" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_baseline_mode_comment_24"
+            android:title="Feadback" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/img_1"
+            android:title="Log out" />
+        <item
+            android:id="@+id/nav_aboutUs"
+            android:icon="@android:drawable/ic_dialog_alert"
+            android:title="About Us" />
+
+        <item
+            android:id="@+id/nav_bloodInfo"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="Blood info" />
+        <item
+            android:id="@+id/rr"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="Requests" />
+        <item
+            android:id="@+id/mmm"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="Messages" />
+    </group>
+
+
+
+
+
+
+</menu>

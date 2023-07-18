@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Feedback">
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="Review"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="292dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="112dp"
+            android:background="@drawable/buttons"
+            android:foregroundGravity="center_horizontal"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Feedback"
+            app:layout_constraintVertical_bias="0.842" />
+
+        <TextView
+            android:id="@+id/txtFeedback"
+            android:layout_width="264dp"
+            android:layout_height="26dp"
+            android:layout_below="@+id/rl"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="332dp"
+            android:text="Write your Review"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.285"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rl" />
+
+        <EditText
+            android:id="@+id/Feedback"
+            android:layout_width="339dp"
+            android:layout_height="82dp"
+            android:layout_below="@+id/txtFeedback"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/input_design"
+            android:hint="Feedback"
+            android:padding="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtFeedback" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="400dp"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rl"
+            app:srcCompat="@drawable/r2" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

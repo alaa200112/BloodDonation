@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_default"
+    android:orientation="vertical"
+    tools:context=".show_message">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="bottom|end"
+        android:background="@color/white">
+
+      <ImageButton
+          android:id="@+id/undo"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          android:outlineAmbientShadowColor="@color/colorAccent"
+          android:outlineSpotShadowColor="@color/colorAccent"
+          app:srcCompat="@android:drawable/ic_media_rew" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+      <LinearLayout
+          android:id="@+id/yesnolayout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_horizontal"
+          android:orientation="horizontal"
+          android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Messages"
+            android:textColor="@android:color/black" />
+
+
+      </LinearLayout>
+
+
+
+
+
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recyclerView3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+    </LinearLayout>
+  </LinearLayout>
+</RelativeLayout>

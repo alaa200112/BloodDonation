@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".w_post">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/b" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Description:" />
+
+                <EditText
+                    android:id="@+id/getdes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter All Information"
+
+                    android:padding="10dp"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/postingbtn"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/buttons"
+                android:gravity="center"
+                android:text="Post"
+                android:textSize="19dp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
+

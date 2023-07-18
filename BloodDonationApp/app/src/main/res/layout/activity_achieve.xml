@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbarStyle="outsideOverlay"
+    tools:context=".achieve"
+    android:background="@color/colorAbnb3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:paddingBottom="0dp"
+        android:background="@drawable/design"
+        >
+        <RelativeLayout
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+            <LinearLayout
+                android:id="@+id/donoAchiev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/ic_cover_logo"
+                    android:background="@drawable/input_design2"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/username"
+                    android:text="  Elham"
+                    android:paddingBottom="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="32dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    ></TextView>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/donorAchiev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/donor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="170dp"
+            android:background="@drawable/input_design"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/white"
+            android:padding="5dp">
+            <LinearLayout
+                android:id="@+id/donor3"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/input_design"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/white"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/setLastDonate"
+                    android:text="          Last   "
+                    android:layout_centerHorizontal="true"
+                    android:textSize="21dp"
+                    android:textStyle="bold"
+
+                    ></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/TotalDonated"
+                    android:text="         Total   "
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    ></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/donateInfo"
+                    android:text="     Next   "
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    ></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/donor4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/input_design"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/white"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/LastDonate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="12/12/2023  "
+                    android:layout_centerHorizontal="true"
+                    android:textSize="17dp"
+                    android:textColor="@color/colorAbnb1"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    />
+                <TextView
+                    android:id="@+id/settotalDonate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textColor="@color/colorAbnb1"
+                    android:text=" 0times  "
+                    />
+                <TextView
+                    android:id="@+id/setnextDonate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="12/1/2023"
+                    android:padding="5dp"
+                    android:textColor="@color/colorAbnb1"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/donoAchiev0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/ic_baseline_email_24"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Email"
+                    android:text="  elham@gmail.com"
+                    android:paddingBottom="35dp"
+                    android:layout_marginTop="34dp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    ></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@android:drawable/stat_sys_phone_call"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phone"
+                    android:text="  0123456789"
+                    android:paddingBottom="35dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    ></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@android:drawable/ic_dialog_map"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/map"
+                    android:text="  Address"
+                    android:paddingBottom="35dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    ></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+
+

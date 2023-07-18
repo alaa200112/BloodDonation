@@ -1,0 +1,209 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    android:scrollbarStyle="outsideOverlay"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/re" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#FFFFFF"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:orientation="vertical"
+            >
+
+
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Register"
+                android:textColor="@color/black"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/input_fullName"
+                android:layout_width="310dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/input_design"
+                android:backgroundTint="#E1E4E6"
+                android:drawableStart="@drawable/ic_baseline_person_outline_24"
+                android:ems="10"
+                android:hint="   Name"
+                android:inputType="textEmailAddress"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/inputMobile"
+                android:layout_width="310dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/input_design"
+                android:backgroundTint="#E1E4E6"
+                android:drawableStart="@android:drawable/ic_menu_call"
+                android:ems="10"
+                android:hint="   Phone Number"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"/>
+
+            <LinearLayout
+                android:layout_width="310dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="36dp"
+                android:orientation="horizontal"
+                android:background="@drawable/input_design"
+                android:backgroundTint="#E1E4E6"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Sex "
+                    android:textSize="20dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <Spinner
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:entries="@array/gender">
+
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="310dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="36dp"
+                android:orientation="horizontal"
+                android:background="@drawable/input_design"
+                android:backgroundTint="#E1E4E6"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Group"
+                    android:textSize="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="10dp"/>
+
+                <Spinner
+                    android:id="@+id/inputBloodGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:entries="@array/Blood_Group">
+
+                </Spinner>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/inputAddress"
+                android:layout_width="310dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/input_design"
+                android:backgroundTint="#E1E4E6"
+                android:drawableStart="@android:drawable/ic_dialog_map"
+                android:ems="10"
+                android:hint="   Address"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"/>
+            <EditText
+                android:id="@+id/input_userEmail"
+                android:layout_width="310dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/input_design"
+                android:backgroundTint="#E1E4E6"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:ems="10"
+                android:hint="  Email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"/>
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="310dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="28dp"
+                android:ems="10"
+                android:padding="10dp"
+                android:background="@drawable/input_design"
+                android:backgroundTint="#E1E4E6"
+                android:hint="  Password"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:inputType="textPassword"
+                />
+
+
+            <EditText
+                android:id="@+id/input_password_confirm"
+                android:layout_width="310dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="28dp"
+                android:ems="10"
+                android:padding="10dp"
+                android:background="@drawable/input_design"
+                android:backgroundTint="#E1E4E6"
+                android:hint="  Confirm Password"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:inputType="textPassword"
+                />
+
+            <Button
+                android:id="@+id/button_register"
+                android:layout_width="315dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttons"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Logintxt"
+                android:layout_width="226dp"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

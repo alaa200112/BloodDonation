@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_default"
+    android:orientation="vertical"
+    tools:context=".showRequest">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/yesnolayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="Donation Requests"
+                android:textSize="30dp"
+                android:textColor="@android:color/black" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

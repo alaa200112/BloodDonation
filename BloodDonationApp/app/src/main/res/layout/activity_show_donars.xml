@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_default"
+    android:orientation="vertical"
+    tools:context=".showDonars">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAbnb3"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:text="Choose Blood Group:" />
+
+            <Spinner
+                android:id="@+id/inputBloodGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/Blood_Group"
+                android:padding="10dp"></Spinner>
+        </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/buttons"
+            android:gravity="center"
+            android:text="Search"
+            android:textColor="#FFFFFF" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
